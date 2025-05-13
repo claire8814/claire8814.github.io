@@ -1,0 +1,50 @@
+p{
+    color:rgb(24, 4, 37);
+}
+
+.conan{
+    background-color: blueviolet;
+}
+
+a.clairelink{
+    padding: 0px 30px;
+    margin:0px 0px 0px 10px;
+    border-radius: 50px;
+    color:rgb(189, 160, 221);
+}
+
+a.clairelink:hover {
+   background-color: rgb(189, 160, 221);
+   color:azure;
+}
+
+div.clairedivgrey{
+    background-color: rgb(229, 229, 229);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(211, 211, 211);
+    wudth:95px;
+
+}
+
+h4.clairesmallh4{
+    font-size: 18px;
+}
+
+section#about.resume-section{
+    background-color: rgba(254, 254, 254, 0.292);
+}
+
+.clairecrop{
+    height:200px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+
+.clairecallmebg{
+    background-image: url("../assets/img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
