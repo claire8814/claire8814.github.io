@@ -52,3 +52,7 @@ section#about.resume-section{
 .claireserif{
     font-family: "Noto Serif TC", serif;
 }
+
+.clairecenter{
+    text-align: center;
+}
