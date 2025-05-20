@@ -48,3 +48,7 @@ section#about.resume-section{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.claireserif{
+    font-family: "Noto Serif TC", serif;
+}
