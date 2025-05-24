@@ -73,7 +73,7 @@ section#about.resume-section{
   }
 
 .card img {
-    width: 150%;
+    width: 130%;
     height: 200px;
     object-fit: cover;
   }
@@ -81,4 +81,11 @@ section#about.resume-section{
 .card a {
     text-decoration: none;
     color: inherit;
+  }
+
+.table-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
