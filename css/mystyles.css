@@ -24,11 +24,10 @@ a.clairelink:hover {
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
     width: 100px;
-  
     writing-mode: horizontal-tb !important;
-    transform: none !important;
-    text-orientation: mixed !important;
     white-space: normal !important;
+    transform: none !important;
+    display: block !important;
   }
 
 h4.clairesmallh4{
