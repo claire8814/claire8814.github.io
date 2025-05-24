@@ -20,7 +20,7 @@ a.clairelink:hover {
 
 .clairedivgrey {
     background-color: rgb(229, 229, 229);
-    padding:10px 15px;
+    padding: 13px 18px;
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
     width: fit-content;
@@ -66,3 +66,8 @@ section#about.resume-section{
 .clairehl{
     color:rgb(212, 59, 59);
 }
+
+.center-title {
+    text-align: center;
+    width: 20%;
+  }
