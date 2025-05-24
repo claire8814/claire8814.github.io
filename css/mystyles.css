@@ -20,7 +20,7 @@ a.clairelink:hover {
 
 .clairedivgrey {
     background-color: rgb(229, 229, 229);
-    padding: 30px;
+    padding:10px 15px;
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
     width: fit-content;
@@ -32,7 +32,7 @@ a.clairelink:hover {
     transform: none;
   }
 
-  
+
 h4.clairesmallh4{
     font-size: 18px;
 }
