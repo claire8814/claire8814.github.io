@@ -23,14 +23,16 @@ a.clairelink:hover {
     padding: 30px;
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
-    
-    width: fit-content;        
-    max-width: 100%;           
+    width: fit-content;
+    max-width: 100%;
+    font-size: 18px;
   
-    writing-mode: horizontal-tb !important;
-    white-space: normal !important;
-    transform: none !important;
+    white-space: normal;
+    writing-mode: horizontal-tb;
+    transform: none;
   }
+
+  
 h4.clairesmallh4{
     font-size: 18px;
 }
