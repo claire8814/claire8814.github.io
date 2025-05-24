@@ -104,3 +104,20 @@ section#about.resume-section{
     margin-top: 30px;
     margin-bottom: 10px;
   }
+
+.art-gallery {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+  }
+  
+.art-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
