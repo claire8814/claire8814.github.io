@@ -131,6 +131,30 @@
             <section class="resume-section" id="Certifications">
                 <div class="resume-section-content">
                     <h2 class="mb-5">興趣愛好</h2>
+                    <table class="table table-striped table-hover">
+                        <tr class="table-danger">
+                            <th>順序</th>
+                            <th>證照名稱</th>
+                            <th>取得日期</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>空手道一級證照</td>
+                            <td>2021
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>GEPT英檢中高級</td>
+                            <td>2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>怪奇物語 Sanger Things</td>
+                            <td>Netflix</td>
+                        </tr>
+                    </table>
                     <div class="card-group">
                         <div class="card">
                             <a href="assets/photo/444.jpg" target="_blank"><img src="/assets/photo/444.jpg" class="card-img-top" alt="圖畫">
@@ -160,35 +184,24 @@
                               <p class="card-text"></p>
                             </div>
                         </div>
-
-                    <h3 style="text-align: center; margin-top: 40px;">影劇排行</h3>  
-
-                        <table class="table table-striped table-hover">
-                            <tr class="table-danger">
-                                <th>名次</th>
-                                <th>影劇名稱</th>
-                                <th>觀看平台</th>
-                            </tr>
-                            <tr>
-                                <td>🥇</td>
-                                <td>神盾局特工 Agents Of Shield</td>
-                                <td>Disney+
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>🥈</td>
-                                <td>哈利波特 Harry Potter</td>
-                                <td>HBO
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>🥉</td>
-                                <td>怪奇物語 Sanger Things</td>
-                                <td>Netflix</td>
-                            </tr>
-                        </table>
+                        
                       </div>
                 </div>
+                <script>
+                    const gallery = document.getElementById("autoScrollGallery");
+                  
+                    let scrollAmount = 0;
+                    setInterval(() => {
+                      scrollAmount += 1;
+                      gallery.scrollTo({
+                        left: scrollAmount,
+                        behavior: "smooth"
+                      });
+                      if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+                        scrollAmount = 0;
+                      }
+                    }, 30); // 數字越小速度越快
+                </script>
             </section>
             <hr class="m-0" />
             <!-- daily-->
