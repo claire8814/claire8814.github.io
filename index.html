@@ -187,21 +187,6 @@
                         
                       </div>
                 </div>
-                <script>
-                    const gallery = document.getElementById("autoScrollGallery");
-                  
-                    let scrollAmount = 0;
-                    setInterval(() => {
-                      scrollAmount += 1;
-                      gallery.scrollTo({
-                        left: scrollAmount,
-                        behavior: "smooth"
-                      });
-                      if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
-                        scrollAmount = 0;
-                      }
-                    }, 30); // 數字越小速度越快
-                </script>
             </section>
             <hr class="m-0" />
             <!-- daily-->
@@ -218,7 +203,9 @@
                     <a href="assets/photo/008.jpg" target="_blank"><img src="/assets/photo/008.jpg" alt="阿煒的照片" width="30%" class="clairecrop"></a>
                     <a href="assets/photo/09.jpg" target="_blank"><img src="/assets/photo/09.jpg" alt="阿煒的照片" width="30%" class="clairecrop"></a>
                 </div>
-                <h2>🎨 我的畫作展示</h2>
+            </section>
+            <section>
+                <h2>🎨 我的畫作</h2>
                 <div class="art-gallery">
                     <img src="assets/photo/444.jpg" alt="畫1">
                     <img src="assets/photo/777.jpg" alt="畫2">
@@ -229,6 +216,21 @@
                     <img src="assets/photo/100.jpg" alt="畫8">
                 </div>
             </section>
+            <script>
+                const gallery = document.getElementById("autoScrollGallery");
+              
+                let scrollAmount = 0;
+                setInterval(() => {
+                  scrollAmount += 1;
+                  gallery.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth"
+                  });
+                  if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+                    scrollAmount = 0;
+                  }
+                }, 30); // 數字越小速度越快
+            </script>
             <hr class="m-0" />
             <!-- contact-->
             <section class="resume-section clairecallmebg" id="contact">
