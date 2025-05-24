@@ -18,14 +18,18 @@ a.clairelink:hover {
    color:azure;
 }
 
-div.clairedivgrey{
+.clairedivgrey {
     background-color: rgb(229, 229, 229);
     padding: 30px;
     border-radius: 10px;
     border: 2px solid rgb(211, 211, 211);
-    width:100px;
-    writing-mode: horizontal-tb;
-}
+    width: 100px;
+  
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    text-orientation: mixed !important;
+    white-space: normal !important;
+  }
 
 h4.clairesmallh4{
     font-size: 18px;
