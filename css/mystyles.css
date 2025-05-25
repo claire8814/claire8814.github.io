@@ -123,6 +123,7 @@ section#about.resume-section{
     display: inline-block;
     border-radius: 8px;
     object-fit: cover;
+    pointer-events: auto;
 }
   
   /* 平滑滾動動畫 */
