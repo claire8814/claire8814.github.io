@@ -207,30 +207,39 @@
             <section>
                 <h2>🎨 我的畫作</h2>
                 <div class="art-gallery">
-                    <img src="assets/photo/444.jpg" alt="畫1">
+                    <img src="assets/photo/109.jpg" alt="畫1">
                     <img src="assets/photo/777.jpg" alt="畫2">
-                    <img src="assets/photo/888.jpg" alt="畫3">
-                    <img src="assets/photo/102.jpg" alt="畫4">
-                    <img src="assets/photo/999.jpg" alt="畫5">
-                    <img src="assets/photo/101.jpg" alt="畫7">
-                    <img src="assets/photo/100.jpg" alt="畫8">
+                    <img src="assets/photo/104.jpg" alt="畫3">
+                    <img src="assets/photo/105.jpg" alt="畫4">
+                    <img src="assets/photo/444.jpg" alt="畫5">
+                    <img src="assets/photo/102.jpg" alt="畫6">
+                    <img src="assets/photo/999.jpg" alt="畫7">
+                    <img src="assets/photo/101.jpg" alt="畫8">
+                    <img src="assets/photo/103.jpg" alt="畫9">
+                    <img src="assets/photo/100.jpg" alt="畫10">
+                    <img src="assets/photo/106.jpg" alt="畫11">
+                    <img src="assets/photo/107.jpg" alt="畫12">
+                    <img src="assets/photo/108.jpg" alt="畫13">
                 </div>
+                <script>
+                    const gallery = document.querySelector(".art-gallery");
+                    let scrollPosition = 0;
+                  
+                    function autoScroll() {
+                      scrollPosition += 1;
+                      gallery.scrollLeft = scrollPosition;
+                  
+                      if (scrollPosition >= gallery.scrollWidth - gallery.clientWidth) {
+                        scrollPosition = 0; // 滑到底就重來
+                      }
+                  
+                      requestAnimationFrame(autoScroll); // 用瀏覽器動畫跑
+                    }
+                  
+                    autoScroll(); // 啟動
+                </script>
             </section>
-            <script>
-                const gallery = document.getElementById("autoScrollGallery");
-              
-                let scrollAmount = 0;
-                setInterval(() => {
-                  scrollAmount += 1;
-                  gallery.scrollTo({
-                    left: scrollAmount,
-                    behavior: "smooth"
-                  });
-                  if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
-                    scrollAmount = 0;
-                  }
-                }, 30); // 數字越小速度越快
-            </script>
+            
             <hr class="m-0" />
             <!-- contact-->
             <section class="resume-section clairecallmebg" id="contact">
