@@ -128,5 +128,6 @@ section#about.resume-section{
 .artsmall{
     font-family: "Noto Serif TC", serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 2rem;
 }
