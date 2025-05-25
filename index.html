@@ -205,39 +205,43 @@
                 </div>
             </section>
             <section>
-                <h2>🎨 我的畫作</h2>
+                <h2 class="artsmall">🎨 我的畫作</h2>
                 <div class="art-gallery">
-                    <img src="assets/photo/109.jpg" alt="畫1">
-                    <img src="assets/photo/777.jpg" alt="畫2">
-                    <img src="assets/photo/104.jpg" alt="畫3">
-                    <img src="assets/photo/105.jpg" alt="畫4">
-                    <img src="assets/photo/444.jpg" alt="畫5">
-                    <img src="assets/photo/102.jpg" alt="畫6">
-                    <img src="assets/photo/999.jpg" alt="畫7">
-                    <img src="assets/photo/101.jpg" alt="畫8">
-                    <img src="assets/photo/103.jpg" alt="畫9">
-                    <img src="assets/photo/100.jpg" alt="畫10">
-                    <img src="assets/photo/106.jpg" alt="畫11">
-                    <img src="assets/photo/107.jpg" alt="畫12">
-                    <img src="assets/photo/108.jpg" alt="畫13">
+                    <a href="assets/photo/109.jpg" target="_blank"></a><img src="assets/photo/109.jpg" alt="畫1">
+                    <a href="assets/photo/777.jpg" target="_blank"></a><img src="assets/photo/777.jpg" alt="畫2">
+                    <a href="assets/photo/104.jpg" target="_blank"></a><img src="assets/photo/104.jpg" alt="畫3">
+                    <a href="assets/photo/105.jpg" target="_blank"></a><img src="assets/photo/105.jpg" alt="畫4">
+                    <a href="assets/photo/444.jpg" target="_blank"></a><img src="assets/photo/444.jpg" alt="畫5">
+                    <a href="assets/photo/102.jpg" target="_blank"></a><img src="assets/photo/102.jpg" alt="畫6">
+                    <a href="assets/photo/999.jpg" target="_blank"></a><img src="assets/photo/999.jpg" alt="畫7">
+                    <a href="assets/photo/101.jpg" target="_blank"></a><img src="assets/photo/101.jpg" alt="畫8">
+                    <a href="assets/photo/103.jpg" target="_blank"></a><img src="assets/photo/103.jpg" alt="畫9">
+                    <a href="assets/photo/100.jpg" target="_blank"></a><img src="assets/photo/100.jpg" alt="畫10">
+                    <a href="assets/photo/106.jpg" target="_blank"></a><img src="assets/photo/106.jpg" alt="畫11">
+                    <a href="assets/photo/107.jpg" target="_blank"></a><img src="assets/photo/107.jpg" alt="畫12">
+                    <a href="assets/photo/108.jpg" target="_blank"></a><img src="assets/photo/108.jpg" alt="畫13">
                 </div>
                 <script>
                     const gallery = document.querySelector(".art-gallery");
+                  
+                    let scrollSpeed = 0.5; // 越大越快（建議 0.5～1）
                     let scrollPosition = 0;
                   
-                    function autoScroll() {
-                      scrollPosition += 1;
+                    function smoothScroll() {
+                      scrollPosition += scrollSpeed;
                       gallery.scrollLeft = scrollPosition;
                   
+                      // 如果滾到最右邊，就回到最左邊
                       if (scrollPosition >= gallery.scrollWidth - gallery.clientWidth) {
-                        scrollPosition = 0; // 滑到底就重來
+                        scrollPosition = 0;
                       }
                   
-                      requestAnimationFrame(autoScroll); // 用瀏覽器動畫跑
+                      requestAnimationFrame(smoothScroll); // 用動畫帧持續執行
                     }
                   
-                    autoScroll(); // 啟動
-                </script>
+                    // 啟動動畫
+                    smoothScroll();
+                  </script>
             </section>
             
             <hr class="m-0" />
