@@ -122,3 +122,9 @@ section#about.resume-section{
     scroll-snap-align: start;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
+
+.artsmall{
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    font-size: 20px;
+}
