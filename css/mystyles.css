@@ -120,7 +120,7 @@ section#about.resume-section{
 }
   
 .art-gallery img {
-    height: 100px;
+    height: 150px;
     margin: 0 10px;
     display: inline-block;
     border-radius: 8px;
@@ -141,6 +141,6 @@ section#about.resume-section{
 .artsmall{
     font-family: "Noto Serif TC", serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 2rem;
 }
