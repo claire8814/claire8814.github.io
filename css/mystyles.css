@@ -38,9 +38,8 @@ h4.clairesmallh4{
 }
 
 section#about.resume-section{
-    background-color: rgba(254, 254, 254, 0.292);
+    background-image: url("../assets/img/bc.jpeg");
 }
-
 .clairecrop{
     height:200px;
     overflow: hidden;
@@ -70,40 +69,40 @@ section#about.resume-section{
 .center-title {
     text-align: center;
     width: 20%;
-  }
+}
 
   .card-row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
-  }
+}
   
 .card {
     width: 25%;
     border: 1px solid #ccc;
     text-align: center;
     box-sizing: border-box;
-  }
+}
   
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
-  }
+}
 
 .card a {
     text-decoration: none;
     color: inherit;
-  }
+}
 
 .table-title {
     text-align: center;
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 10px;
-  }
+}
 
 .art-gallery {
     overflow: hidden;
@@ -111,12 +110,12 @@ section#about.resume-section{
     width: 100%;
     box-sizing: border-box;
     padding: 10px 0;
-  }
+}
   
 .scrolling-content {
     display: inline-block;
     animation: scroll-left 25s linear infinite;
-  }
+}
   
 .art-gallery img {
     height: 200px;
@@ -124,7 +123,7 @@ section#about.resume-section{
     display: inline-block;
     border-radius: 8px;
     object-fit: cover;
-  }
+}
   
   /* 平滑滾動動畫 */
 @keyframes scroll-left {
@@ -134,7 +133,7 @@ section#about.resume-section{
     100% {
       transform: translateX(-50%);
     }
-  }
+}
 
 .artsmall{
     font-family: "Noto Serif TC", serif;
