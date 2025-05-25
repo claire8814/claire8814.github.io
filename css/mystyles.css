@@ -107,7 +107,9 @@ section#about.resume-section{
 
 .art-gallery {
     display: flex;
+    scroll-behavior: smooth;
     overflow-x: auto;
+    white-space: nowrap;
     gap: 10px;
     padding: 10px 0;
     scroll-snap-type: x mandatory;
