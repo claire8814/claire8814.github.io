@@ -106,23 +106,34 @@ section#about.resume-section{
   }
 
 .art-gallery {
-    display: flex;
-    scroll-behavior: smooth;
-    overflow-x: auto;
+    overflow: hidden;
     white-space: nowrap;
-    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 10px 0;
-    scroll-snap-type: x mandatory;
+  }
+  
+.scrolling-content {
+    display: inline-block;
+    animation: scroll-left 25s linear infinite;
   }
   
 .art-gallery img {
-    width: 150px;
-    height: 155px;
+    height: 200px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 8px;
     object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* 平滑滾動動畫 */
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 
 .artsmall{
