@@ -146,14 +146,33 @@ section#about.resume-section{
     margin-bottom: 2rem;
 }
 
-.image-hover {
+.typewriter-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .typewriter {
     overflow: hidden;
-}
-
-.image-hover img {
-    transition: transform 0.4s ease;
-}
-
-.image-hover:hover img {
-    transform: scale(1.1);
-}
+    white-space: nowrap;
+    border-right: 3px solid black;
+    font-size: 24px;
+    width: 20ch;  /* 根據字數調整 */
+    animation: typing 4s steps(20) infinite, blink 0.7s step-end infinite;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+    float: right; /* 靠右 */
+  }
+  
+  @keyframes typing {
+    0% { width: 0 }
+    50% { width: 20ch }
+    80% { width: 20ch } /* 停一下 */
+    100% { width: 0 }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
