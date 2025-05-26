@@ -146,3 +146,14 @@ section#about.resume-section{
     margin-bottom: 2rem;
 }
 
+.image-hover {
+    overflow: hidden;
+}
+
+.image-hover img {
+    transition: transform 0.4s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1);
+}
