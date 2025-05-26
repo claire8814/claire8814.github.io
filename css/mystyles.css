@@ -38,7 +38,7 @@ h4.clairesmallh4{
 }
 
 section#about.resume-section{
-    background-image: url("../assets/img/bc3.jpeg");
+    background-image: url("../assets/img/bc3.jpeg") !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -144,5 +144,15 @@ section#about.resume-section{
     text-align: center;
     font-size: 35px;
     margin-bottom: 2rem;
+}
+
+
+body {
+    background-image: url('../assets/img/blue.png'); /* 換成你背景圖的路徑 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 背景固定，不跟著捲動 */
+    font-family: sans-serif;
 }
 
